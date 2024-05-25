@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat App</title>
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="name-window" class="modal">
+    <form class="modal-content">
+      <div>
+        <h>Welcome to the chat</h>
+        <h1>Write your name and room code</h1>
+        <input type="text" id="name-input" placeholder="Name">
+        <input type="text" id="room-input" placeholder="Room">
+        <button type="submit" id="join-button">Join</button>
+        <h3>Leave the room option empty for joining public chat</h3>
+      </div>
+    </form>
+  </div>
+  <div id="users">
+    <h1>Users connected</h1>
+    <div id="users-container"></div>
+  </div>
+  <div id="chat">   
+    <div id="chat-box">
+      <div id="message-container"></div>
+      <form id="send-container">
+        <input type="text" id="message-input" placeholder="Message">
+        <button type="submit" id="send-button">Send</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

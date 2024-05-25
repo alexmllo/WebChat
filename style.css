@@ -1,0 +1,154 @@
+body {
+    height: calc(100vh - 4px);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 3em;
+    background-image: url("./photos/fondo3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#users h1{
+    color: rgb(0, 49, 184);
+    text-align: center;
+    background-color: rgba(255, 255, 255, .4); 
+}
+
+#name-window h {
+    font-size: 5em;
+    color: white;
+}
+
+#name-window h1 {
+    color: white;
+}
+
+#name-window h3 {
+    font-size: 1em;
+    color: gray;
+}
+
+#join-button {
+    border-radius: 7px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-left: 10px;
+}
+
+#message-input {
+    flex-grow: 1;
+}
+
+#room-input {
+    flex-grow: 1;
+}
+
+.modal {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    background-image: url("./photos/fondo.jpg");
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    border-radius: 7px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-left: 10px;
+    background-color: white;
+}
+
+#message-input {
+    border-radius: 10px 0px 0px 10px;
+}
+
+#send-button {
+    border-radius: 10px 0px 10px 0px;
+}
+
+#send-container {
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    background-image: url("./photos/fondo3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#chat {
+    margin-top: 20px;
+    width: 70%;
+    margin-bottom: 52px;
+    margin-right: 30px;
+}
+
+#chat-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border: #999 2px solid;
+    border-radius: 10px 0px 10px 10px;    
+}
+
+#message-container {
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: calc(100% - 24px)
+}
+
+#message-container div {
+    background-color: rgba(128, 128, 128, .5);
+    padding: 5px;
+}
+
+#message-container div:nth-child(2n) {
+    background-color: rgba(255, 255, 255, .5);    
+}
+
+#users {
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 50%;  
+    border: gray solid 2px; 
+    border-radius: 10px 10px 0px 10px; 
+    background-image: url("./photos/fondo-users.jpg");
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-attachment: fixed;
+
+}
+
+#users-container {
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 82.5%;
+}
+
+#users-container div {
+    background-color: rgba(128, 128, 128, .5);
+    padding: 5px;
+}
+
+#users-container div:nth-child(2n) {
+    background-color: rgba(255, 255, 255, .5);    
+}
+
